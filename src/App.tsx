@@ -3,6 +3,7 @@ import './App.css';
 import {Accordion} from './components/Accordion/Accordion';
 import {Rating} from './components/Accordion/Rating';
 import {UncontrolledAccordion} from './components/Accordion/UncontrolledAccordion';
+import { OnOff } from './components/OnOff/OnOff';
 
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
             <Rating value={5}/>
             <Rating value={2}/>
             <Rating value={3}/>
+
+            <OnOff on={false}/>
+            <OnOff on={true}/>
+            <OnOff on={false}/>
         </div>
     );
 }
